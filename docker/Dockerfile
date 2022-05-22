@@ -1,0 +1,9 @@
+FROM openjdk:16
+
+ARG PROJECT_JAR
+ENV PROJECT_JAR ${PROJECT_JAR}
+
+COPY target/$PROJECT_JAR /
+
+CMD  java -XX:MinRAMPercentage=10.0 -XX:MaxRAMPercentage=80.0 -jar /${PROJECT_JAR}
+

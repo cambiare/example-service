@@ -1,0 +1,11 @@
+An example-service with a Java 16 SpringBoot application and an executable Docker artifact.
+
+To try, clone this repo and run "./build.sh" in the root of the project.
+
+Dependencies:
+    - Running Docker service
+    - mvn command available in PATH
+    - jdk16+ available in PATH
+    - bash
+
+
